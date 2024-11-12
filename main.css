@@ -1,5 +1,5 @@
 #product-overview {
-    background: var(--primary-color);
+    background-image: url("./images/easy_cooking.jpg");
     width: 100%;
     height: 528px;
     padding: 10px;   
@@ -44,7 +44,7 @@
     text-align: center;
     background-color: var(--accent-color);
     color: var(--light-color);
-    box-shadow: 2px 4px 4px rgba(50, 50, 50, 0.6);
+    box-shadow: 2px 4px 4px var(--shadow-color);
 }
 
 .plan-title {

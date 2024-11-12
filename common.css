@@ -1,15 +1,16 @@
 :root {
-    --primary-color: #7DBF36;
-    --secondary-color: #FFCE00;
-    --terciary-color: #A77FDC;
-    --accent-color: #9E2CFC;
-    --error-color: #B2032F;
-    --warn-color: #E86100;
-    --light-color: #F9EEF8;
-    --dark-color: #351332;
+    --primary-color: #6a2a14;
+    --secondary-color: #d2ccbb;
+    --terciary-color: #d2a25a;
+    --accent-color: #708d1d;
+    --error-color: #c4181d;
+    --warn-color: #e9c367;
+    --light-color: #e5e6e0;
+    --dark-color: #060504;
     --darkgrey-color: #282428;
     --grey-color: #9e949e;
     --lightgrey-color: #cfc9cf;
+    --shadow-color: rgba(50, 50, 50, 0.6);
 }
 
 * {
@@ -95,11 +96,14 @@ header {
     border-radius: 8px;
 }
 
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
+.main-nav__item--cta a:hover {
     border: 0;
     background-color: var(--accent-color);
     color: var(--light-color);
+}
+
+.main-nav__item--cta a:active {
+    box-shadow: inset 2px 4px 4px var(--shadow-color);
 }
 
 .button {
@@ -111,14 +115,17 @@ header {
     padding: 8px 15px;
     margin: 2px;
     cursor: pointer;
-    box-shadow: 2px 4px 4px rgba(50, 50, 50, 0.6);
+    box-shadow: 2px 4px 4px var(--shadow-color);
 }
 
-.button:hover,
-.button:active {
+.button:hover {
     background-color: var(--terciary-color);
     color: var(--light-color);
     border: var(--light-color) 2px solid;
+}
+
+.button:active {
+    box-shadow: inset 2px 4px 4px var(--shadow-color);
 }
 
 #key-features {
