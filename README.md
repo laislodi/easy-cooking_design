@@ -11,12 +11,6 @@ The idea is to create a desing to a cooking teachig website, with plans to subsc
 
 ## What's next?
 
-### Colors
-
-I'm still working on the colors, I'm not sure if they are the best.
-
-The idea was to store the colors in variables so it's easier to change if needed.
-
 ### Alignments
 
 The plans in the index page are not quite aligned yet. In the next steps I intend to make them the same size and responsive to smaller devices.
