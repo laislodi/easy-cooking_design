@@ -5,9 +5,13 @@ This is a small and very simple project I'm working on to go deeper in CSS conce
 
 The idea is to create a desing to a cooking teachig website, with plans to subscribe to get access to recipes and ingredients used in them.
 
-## How it looks so far...
+## How the index page looks so far...
 
 ![This is how the page looks so far](/images/easy-cooking_design.png)
+
+## How Packages page looks so far...
+
+![This is how the packages page looks so far](/images/easy-cooking_design_packages.png)
 
 ## What's next?
 
@@ -22,6 +26,10 @@ As I said before, the plans are not responsive. That applies to the whole page. 
 ### Fix Broken pages
 
 There is a lot to be done, I'm just getting started with this app. The links are broken since I didn't create all the pages yet. I will do that in the next steps.
+
+### Reasons to stick around
+
+The lower session of the index page has empty circles. This is not gonna be like that for long.
 
 ### Single Page Application
 

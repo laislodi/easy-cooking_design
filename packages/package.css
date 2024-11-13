@@ -1,0 +1,98 @@
+.background {
+    background-image: url("../images/plans-background.jpg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 58px;
+    z-index: -2;
+}
+
+.package {
+    position: relative;
+    z-index: 0;
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    border-width: 4px;
+    border-style: solid;
+    border-left: 0;
+    margin: 20px 20px 20px 0;
+    padding: 0px 30px 10px 30px;
+    width: 75%;
+}
+
+#free {
+    position: relative;
+    left: 25%;
+    background-color: rgba(210, 204, 187, 0.9); /*rgba(210, 162, 90, 0.9);*/
+    border-left: 4px solid var(--dark-color);
+    border-right: 0;
+}
+
+#free:hover,
+#free:active {
+    border-left: 4px solid var(--warn-color);
+}
+
+.package:hover,
+.package:active {
+    border-color: var(--warn-color);
+    box-shadow: 2px 4px 4px var(--shadow-color);
+}
+
+.package .package-title {
+    font-size: xx-large;
+    color: var(--primary-color);
+}
+
+.package-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    font-size: 16px;
+    margin: 20px;
+    padding: 8px;
+    color: var(--light-color);
+    background-color: var(--accent-color);
+}
+
+.package .package-subtitle {
+    color: var(--dark-color);
+}
+
+.package .package-description {
+    color: var(--dark-color);
+    font-size: 20px;
+    background-color: var(--light-color);
+    padding: 16px;
+    border: 4px solid var(--dark-color);
+}
+
+section > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.package__highlighted {
+    background-color: var(--primary-color);
+    border-color: var(--terciary-color);
+}
+
+.package__highlighted:hover,
+.package__highlighted:active {
+    border-color: var(--light-color);
+}
+
+.package__highlighted .package-title {
+    color: var(--light-color);
+}
+
+.package__highlighted .package-subtitle {
+    color: var(--grey-color);
+}
+
+.package__highlighted .package-description {
+    border-color: var(--terciary-color);
+}
+
+
