@@ -7,11 +7,34 @@ The idea is to create a desing to a cooking teachig website, with plans to subsc
 
 ## How the index page looks so far...
 
-![This is how the page looks so far](/images/easy-cooking_design.png)
+<img src="images/easy-cooking_design.png" alt="This is how the page looks so far" width=600 />
 
 ## How Packages page looks so far...
 
-![This is how the packages page looks so far](/images/easy-cooking_design_packages.png)
+<img src="images/easy-cooking_design_packages.png" alt="This is how the packages page looks so far" width=600 />
+
+## What do we have so far?
+
+### Index page
+
+#### Hamburger menu
+In the index page we have a hamburguer menu that opens a mobile menu, hidden at first. Later this will be shown only at smaller screens.
+
+<img src="images/mobile-nav.png" alt="Mobile Nav" width=600 />
+
+---
+
+#### Modal
+
+Every time the CHOOSE PLAN button is clicked, we show a modal with a confirmation button to redirect to another page (yet to be created).
+
+<img src="images/confirming-modal.png" alt="Confirming Modal" width=600 />
+
+#### Reactive buttons and styling
+
+The buttons change color when hover and change the shadow to create an impression that they are being pushed down.
+
+<img src="images/choose-plan-button_active.png" alt="Choose Plan button"/>
 
 ## What's next?
 
