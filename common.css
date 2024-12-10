@@ -47,11 +47,6 @@ header {
     padding: 16px 16px;
 }
 
-.main-header > div {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .main-header__brand {
     color: var(--accent-color);
     text-decoration: none;
@@ -64,7 +59,7 @@ header {
 
 .toggle-button {
     width: 3rem;
-    background:  transparent;
+    background: transparent;
     border: none;
     cursor: pointer;
     padding-top: 0;
@@ -92,7 +87,6 @@ header {
 }
 
 .main-nav__items {
-    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -230,7 +224,7 @@ header {
 
 .main-footer {
     background-color: var(--dark-color);
-    padding: 50px 
+    padding: 50px;
 }
 
 .main-footer__links {
@@ -254,4 +248,67 @@ header {
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: var(--secondary-color);
+}
+
+.open {
+    display: block !important;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--shadow-color);
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: var(--light-color);
+    padding: 1rem;
+    border: 1px, solid #ccc;
+    box-shadow: var(--shadow-color);
+}
+
+.modal-title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.modal-actions {
+    text-align: center;
+}
+
+.modal-action {
+    border: 1px solid var(--accent-color);
+    background: var(--accent-color);
+    text-decoration: none;
+    color: var(--light-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.modal-action:hover,
+.modal-action:active {
+    background-color: #526600;
+    border-color: #526600;
+}
+
+.modal-action__negative {
+    background: var(--error-color);
+    border-color: var(--error-color);
+}
+
+.modal-action__negative:hover,
+.modal-action__negative:active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
