@@ -15,23 +15,30 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
 }
 
 var noButton = document.querySelector('.modal-action__negative');
-noButton.addEventListener('click', function() {
-    // modal.style.display = 'none';
-    // backdrop.style.display = 'none';
-    modal.classList.remove('open');
-    backdrop.classList.remove('open');
-});
+if (noButton) {
+    noButton.addEventListener('click', function() {
+        // modal.style.display = 'none';
+        // backdrop.style.display = 'none';
+        modal.classList.remove('open');
+        backdrop.classList.remove('open');
+    });
+}
+
 
 var mobileNav = document.querySelector('.mobile-nav');
-backdrop.addEventListener('click', function() {
-    // mobileNav.style.display = 'none';
-    // modal.style.display = 'none';
-    // backdrop.style.display = 'none';
-    mobileNav.classList.remove('open');
-    modal.classList.remove('open');
-    backdrop.classList.remove('open');
-    
-});
+if (backdrop) {
+    backdrop.addEventListener('click', function() {
+        // mobileNav.style.display = 'none';
+        // modal.style.display = 'none';
+        // backdrop.style.display = 'none';
+        mobileNav.classList.remove('open');
+        backdrop.classList.remove('open');
+        if (modal) {
+            modal.classList.remove('open');
+        }
+    });
+}
+
 
 var toggleButton = document.querySelector('.toggle-button');
 toggleButton.addEventListener('click', openMobileNav)
