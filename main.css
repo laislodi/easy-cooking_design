@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: right; /* left top right botton */
     width: 100%;
-    height: 528px;
+    height: 20vh;
     padding: 10px;
     position: relative;
 }
@@ -17,24 +17,6 @@
     font-size: 1.6rem;
 }
 
-@media (min-width: 40rem) {
-    #product-overview {
-        height: 40vh;
-    }
-    #product-overview h1 {
-        font-size: 3rem;
-    }
-}
-
-@media (min-width: 60rem) {
-    #product-overview {
-        height: 50vh;
-    }
-    #product-overview h1 {
-        font-size: 5rem;
-    }
-}
-
 .plans {
     text-align: center;
 }
@@ -44,16 +26,28 @@
 }
 
 .plan {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 80%;
     text-align: center;
     background-color: var(--terciary-color);
     padding: 16px;
     margin: 6px;
     border-radius: 8px;
-    height: 450px;
+    height: 45vh;
+    max-width: 330px;
+    min-width: 250px;
+}
+
+.plan button {
+    position: absolute;
+    right: 25%;
+    left: 25%;
+    bottom: 5%;
+    /* max-width: 200px; */
 }
 
 .plan-list {
@@ -65,12 +59,15 @@
 }
 
 .plan-title__highlighted {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 2%;
     background-color: var(--light-color);
     color: var(--primary-color);
     border: var(--primary-color) 2px solid;
     border-radius: 8px;
     padding: 4px;
-    width: 60%;
     text-align: center;
 }
 
@@ -99,5 +96,65 @@
 
 .plan-feature {
     padding: 3px;
+}
+
+/* max-width: until this width */
+@media (max-width: 40rem) {
+    .plan-list {
+        width: 100%;
+    }
+    .plan {
+        width: 90%;
+        height: 45vh;
+    }
+}
+
+/* max-width: until this width */
+@media (max-width: 30rem) {
+    .plan {
+        width: 100%;
+        max-width: none;
+        height: 45vh;
+        box-shadow: none;
+        border-radius: 0%;
+    }
+    .key-feature__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .key-feature {
+        width: 80%;
+    }
+    .plan button {
+        left: 22.5%;
+        right: 22.5%;
+    }
+}
+
+/* 40rem = 640px in this case*/
+/* min-width: from this width */
+@media (min-width: 40rem) {
+    #product-overview {
+        height: 30vh;
+    }
+    #product-overview h1 {
+        font-size: 3rem;
+        color: var(--dark-color);
+    }
+}
+
+/* 60rem = 960px in this case */
+@media (min-width: 60rem) {
+    #product-overview {
+        height: 50vh;
+    }
+    .plan-list {
+        flex-direction: row;
+    }
+    .plan button {
+        left: 10%;
+        right: 10%;
+    }
 }
 

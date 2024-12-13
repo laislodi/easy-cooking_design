@@ -1,0 +1,124 @@
+@import "./header.css";
+@import "./key-features.css";
+@import "./footer.css";
+
+:root {
+    --primary-color: #6a2a14;
+    --secondary-color: #d2ccbb;
+    --terciary-color: #d2a25a;
+    --accent-color: #708d1d;
+    --error-color: #c4181d;
+    --warn-color: #e9c367;
+    --light-color: #e5e6e0;
+    --dark-color: #060504;
+    --darkgrey-color: #282428;
+    --grey-color: #9e949e;
+    --lightgrey-color: #cfc9cf;
+    --shadow-color: rgba(50, 50, 50, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin-top: 4em;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: var(--light-color);
+}
+
+.button {
+    background-color: var(--light-color);
+    color: var(--terciary-color);
+    font-weight: bold;
+    border: var(--terciary-color) 2px solid;
+    border-radius: 8px;
+    padding: 8px 15px;
+    margin: 2px;
+    cursor: pointer;
+    box-shadow: 2px 4px 4px var(--shadow-color);
+}
+
+.button:hover {
+    background-color: var(--terciary-color);
+    color: var(--light-color);
+    border: var(--light-color) 2px solid;
+}
+
+.button:active {
+    box-shadow: inset 2px 4px 4px var(--shadow-color);
+}
+
+.open {
+    display: block !important;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--shadow-color);
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: var(--light-color);
+    padding: 1rem;
+    border: 1px, solid #ccc;
+    box-shadow: var(--shadow-color);
+}
+
+.modal-title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.modal-actions {
+    text-align: center;
+}
+
+.modal-action {
+    border: 1px solid var(--accent-color);
+    background: var(--accent-color);
+    text-decoration: none;
+    color: var(--light-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.modal-action:hover,
+.modal-action:active {
+    background-color: #526600;
+    border-color: #526600;
+}
+
+.modal-action__negative {
+    background: var(--error-color);
+    border-color: var(--error-color);
+}
+
+.modal-action__negative:hover,
+.modal-action__negative:active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+@media (max-width: 656px) {
+    .main-nav {
+        display: none;
+        height: max-content;
+    }
+}

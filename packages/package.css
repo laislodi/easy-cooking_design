@@ -73,7 +73,7 @@ main {
 }
 
 @media (max-width: 700px) {
-    .plan {
+    .package {
         width: 90%;
     }
     #plus {

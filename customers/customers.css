@@ -32,24 +32,6 @@
     width: 27%;
 }
 
-@media (max-width: 800px) {
-    .testimonial-image_container {
-        width: 60%;
-    }
-    .testimonial-info {
-        width: 37%;
-    }
-}
-
-@media (max-width: 600px) {
-    .testimonial-image_container {
-        width: 50%;
-    }
-    .testimonial-info {
-        width: 47%;
-    }
-}
-
 #customer-2.testimonial {
     text-align: right;
 }
@@ -81,6 +63,24 @@
 
 .testimonial-text {
     margin: 3px;
+}
+
+@media (max-width: 800px) {
+    .testimonial-image_container {
+        width: 60%;
+    }
+    .testimonial-info {
+        width: 37%;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial-image_container {
+        width: 50%;
+    }
+    .testimonial-info {
+        width: 47%;
+    }
 }
   
   
