@@ -1,9 +1,11 @@
+@import "../style/common.css";
+
 .background {
     background-image: url("../images/plans-background.jpg");
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 84px;
+    top: 80px;
     z-index: -2;
 }
 
@@ -97,6 +99,58 @@ section > a {
 
 .package__highlighted .package-description {
     border-color: var(--terciary-color);
+}
+
+@media (max-width: 45rem) {
+    .package {
+        width: 90%;
+    }
+    #plus {
+        padding-top: 30px;
+    }
+    #free {
+        width: 90%;
+        left: 10%;
+    }
+    #free:hover,
+    #free:active {
+        border-left: none;
+    }
+}
+
+@media (max-width: 30rem) {
+    .package {
+        width: 100%;
+        border-right: none;
+    }
+    #free {
+        width: 100%;
+        left: 0;
+        border-left: none;
+    }
+}
+
+@media (min-width: 70rem) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .package {
+        border-left: 4px solid var(--primary-color);
+        width: 75%;
+    }
+    #free {
+        border-right: 4px solid var(--primary-color);
+        margin: 20px 20px 20px 0;
+        padding: 0px 30px 10px 30px;
+        width: 75%;
+        position: static;
+    }
+    #free:hover,
+    #free:active {
+        border-right: 4px solid var(--warn-color);
+    }
 }
 
 
