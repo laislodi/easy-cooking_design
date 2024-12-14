@@ -3,57 +3,66 @@
 ## Introduction
 This is a small and very simple project I'm working on to go deeper in CSS concepts and understanding.
 
-The idea is to create a desing to a cooking teachig website, with plans to subscribe to get access to recipes and ingredients used in them.
+The idea is to merge my passion of cooking to my passion to develop function, beautiful and user-friendly designs.
 
-## How the index page looks so far...
+This project is a mock desing for a cooking course website, with plans to subscribe to get access to recipes, videos of how to cook, images of dishes and list of ingredients used in the recipes.
 
-<img src="images/easy-cooking_design.png" alt="This is how the page looks so far" width=600 />
+## Primary goal
 
-## How Packages page looks so far...
+The goal of this project in particular is to deepen my knowledge of plain CSS.
 
-<img src="images/easy-cooking_design_packages.png" alt="This is how the packages page looks so far" width=600 />
+## Goal behind the Primary Goal
 
-## What do we have so far?
+For a while now, I wanted to create a portfolio to show my abilities in frontend development. This project is the first of many I intend to create to show my work.
 
-### Index page
+## Home Page
 
-#### Hamburger menu
-In the index page we have a hamburguer menu that opens a mobile menu, hidden at first. Later this will be shown only at smaller screens.
+The home page is the introduction to the page, where we can find a call to action on eating heathier and making our own meals. It shows the three plans the user can have access to with a simple description.
 
-<img src="images/mobile-nav.png" alt="Mobile Nav" width=600 />
+At the end of the page, we have a section with the key features of the cooking course.
+
+### Modal
+
+Every time any of the CHOOSE PLAN button is clicked, we show a modal with a confirmation button to redirect to another page (yet to be created).
+
+## Packages page
+
+The Packages page is where the packages are more detailed.
+
+## Customer page
+
+The Customer page is where we can show our customers reviews.
+
+## Common components
+
+Every page has a Nav bar with a hamburguer button with a side menu when the user uses small devices and a top menu with bigger devices.
+
+Every page also has the same footer with two links to Support and Terms of Use, which are not ready yet.
 
 ---
 
-#### Modal
-
-Every time the CHOOSE PLAN button is clicked, we show a modal with a confirmation button to redirect to another page (yet to be created).
-
-<img src="images/confirming-modal.png" alt="Confirming Modal" width=600 />
-
 #### Reactive buttons and styling
 
-The buttons change color when hover and change the shadow to create an impression that they are being pushed down.
+The buttons change color when hover and change the shadow to create an impression that they are being pushed down. They also change width according to the page's width.
 
-<img src="images/choose-plan-button_active.png" alt="Choose Plan button"/>
+Some features, like the list of plans and the list of key features in the home page are shown in a line when the page is large enough and in a column when the page get narrowed.
+
+The same thing happens with the Customers Page: When the page is large enought the customer image and their review is side-by-side, but when the space is smaller, the two components are aligned vertically.
 
 ## What's next?
-
-### Alignments
-
-The plans in the index page are not quite aligned yet. In the next steps I intend to make them the same size and responsive to smaller devices.
-
-### Responsiveness
-
-As I said before, the plans are not responsive. That applies to the whole page. Nothing is responsive yet. In the next steps I intend to add responsiveness to the whole app.
 
 ### Fix Broken pages
 
 There is a lot to be done, I'm just getting started with this app. The links are broken since I didn't create all the pages yet. I will do that in the next steps.
 
-### Reasons to stick around
+#### Support Page
 
-The lower session of the index page has empty circles. This is not gonna be like that for long.
+The idea is to create a fake support page, with some FAQs, a form for the user to get in touch, some contact information, etc.
 
-### Single Page Application
+#### Terms of Use Page
 
-My goal is to create a single page application to avoid all the duplicated code, and create smaller components with smaller functionalities.
+The idea is to create the simplest page possible with some terms of use.
+
+#### Start Cooking Page
+
+Yet to be planned.
