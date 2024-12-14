@@ -140,6 +140,13 @@ section > a {
         border-left: 4px solid var(--primary-color);
         width: 75%;
     }
+    .package__highlighted {
+        border-left: 4px solid var(--warn-color);
+    }
+    .package__highlighted:hover,
+    .package__highlighted:active {
+        border-left: 4px solid var(--light-color);
+    }
     #free {
         border-right: 4px solid var(--primary-color);
         margin: 20px 20px 20px 0;
