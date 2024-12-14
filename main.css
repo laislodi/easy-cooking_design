@@ -100,7 +100,6 @@
     padding: 3px;
 }
 
-/* max-width: until this width */
 @media (max-width: 40rem) {
     .plan-list {
         width: 100%;
@@ -108,17 +107,6 @@
     .plan {
         width: 90%;
         height: 45vh;
-    }
-}
-
-/* max-width: until this width */
-@media (max-width: 30rem) {
-    .plan {
-        width: 100%;
-        max-width: none;
-        height: 45vh;
-        box-shadow: none;
-        border-radius: 0%;
     }
     .key-feature__list {
         display: flex;
@@ -128,14 +116,22 @@
     .key-feature {
         width: 80%;
     }
+}
+
+@media (max-width: 30rem) {
+    .plan {
+        width: 100%;
+        max-width: none;
+        height: 45vh;
+        box-shadow: none;
+        border-radius: 0%;
+    }
     .plan button {
         left: 22.5%;
         right: 22.5%;
     }
 }
 
-/* 40rem = 640px in this case*/
-/* min-width: from this width */
 @media (min-width: 40rem) {
     #product-overview {
         height: 30vh;
@@ -146,7 +142,6 @@
     }
 }
 
-/* 60rem = 960px in this case */
 @media (min-width: 60rem) {
     #product-overview {
         height: 50vh;
