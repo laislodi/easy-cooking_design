@@ -32,16 +32,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 80%;
     text-align: center;
     background-color: var(--terciary-color);
-    padding: 16px;
-    margin: 6px;
+    padding: 1rem;
+    margin: 0.4rem;
     border-radius: 8px;
-    height: 45vh;
-    max-width: 330px;
-    min-width: 250px;
+    height: 25rem;
+    max-width: 20rem;
+    min-width: 16rem;
 }
 
 .plan button {
@@ -56,8 +56,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 80%;
-    margin: 16px auto;
+    margin: 1rem auto;
 }
 
 .plan-title__highlighted {
@@ -69,7 +70,7 @@
     color: var(--primary-color);
     border: var(--primary-color) 2px solid;
     border-radius: 8px;
-    padding: 4px;
+    padding: 0.25rem;
     text-align: center;
 }
 
@@ -77,11 +78,13 @@
     background-color: var(--accent-color);
     color: var(--light-color);
     box-shadow: 2px 4px 4px var(--shadow-color);
+    height: 28rem;
+    justify-content: center;
 }
 
 .plan-title {
     color: var(--secondary-color);
-    margin: 0 10px;
+    margin: 0 0.6rem;
     font-weight: bold;
 }
 
@@ -92,12 +95,55 @@
 .plan-features {
     text-decoration: none;
     list-style-type: none;
-    margin: 4px;
-    padding: 4px;
+    margin: 0.25rem;
+    padding: 0.25rem;
 }
 
 .plan-feature {
     padding: 3px;
+}
+
+#key-features {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+#key-features .section-title {
+    color: var(--accent-color);
+    margin: 2rem;
+}
+
+.key-feature__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    padding: 0.25rem;
+    vertical-align: top;
+}
+
+.key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: var(--dark-color);
+    font-size: 1.2rem;
+}
+
+.key-feature__image {
+    text-align: center;
+    background: var(--light-color);
+    width: 8rem;
+    height: 8rem;
+    border: 2px solid var(--dark-color);
+    border-radius: 50%;
+    margin: 0 auto; /* center horizontally because it adds the needed margin on the left/right */
+    padding: 1rem;
 }
 
 @media (max-width: 40rem) {
@@ -106,7 +152,7 @@
     }
     .plan {
         width: 90%;
-        height: 45vh;
+        /* height: 28rem; */
     }
     .key-feature__list {
         display: flex;
@@ -122,9 +168,12 @@
     .plan {
         width: 100%;
         max-width: none;
-        height: 45vh;
+        height: 24rem;
         box-shadow: none;
         border-radius: 0%;
+    }
+    .plan__highlighted {
+        height: 28rem;
     }
     .plan button {
         left: 22.5%;
@@ -134,7 +183,7 @@
 
 @media (min-width: 40rem) {
     #product-overview {
-        height: 30vh;
+        height: 30rem;
     }
     #product-overview h1 {
         font-size: 3rem;
@@ -148,6 +197,7 @@
     }
     .plan-list {
         flex-direction: row;
+        align-items: flex-end;
     }
     .plan button {
         left: 10%;

@@ -1,8 +1,8 @@
 @import "../style/common.css";
 
 .testimonial {
-    font-size: 20px;
-    margin: 48px 0;
+    font-size: 1.2rem;
+    margin: 3rem 0;
 }
 
 .testimonial-list {
@@ -11,7 +11,7 @@
 }
 
 .testimonial:first-of-type {
-    margin-top: 96px;
+    margin-top: 4rem;
 }
 
 .testimonial-image_container {
@@ -28,7 +28,7 @@
 
 .testimonial-info {
     text-align: right;
-    padding: 14px;
+    padding: 0.9rem;
     display: inline-block;
     vertical-align: middle;
     width: 27%;
@@ -43,13 +43,14 @@
 }
 
 .testimonial-name {
-    margin: 3px;
+    margin: 0.3rem;
     color: var(--accent-color);
+    font-size: 2rem;
 }
 
 .testimonial-subtitle {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: var(--primary-color);
 }
 
@@ -64,7 +65,8 @@
 }
 
 .testimonial-text {
-    margin: 3px;
+    margin: 0.3rem;
+    font-size: 1rem;
 }
 
 @media (max-width: 900px) {
