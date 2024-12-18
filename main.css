@@ -7,7 +7,6 @@
     background-position: right; /* left top right botton */
     width: 100%;
     height: 20vh;
-    padding: 10px;
     position: relative;
 }
 
@@ -49,7 +48,6 @@
     right: 25%;
     left: 25%;
     bottom: 5%;
-    /* max-width: 200px; */
 }
 
 .plan-list {
@@ -152,7 +150,6 @@
     }
     .plan {
         width: 90%;
-        /* height: 28rem; */
     }
     .key-feature__list {
         display: flex;
@@ -193,7 +190,7 @@
 
 @media (min-width: 60rem) {
     #product-overview {
-        height: 50vh;
+        height: 40vh;
     }
     .plan-list {
         flex-direction: row;
