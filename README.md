@@ -1,6 +1,7 @@
 # Easy Cooking Desing
 
 ## Introduction
+
 This is a small and very simple project I'm working on to go deeper in CSS concepts and understanding.
 
 The idea is to merge my passion of cooking to my passion to develop function, beautiful and user-friendly designs.
@@ -33,15 +34,19 @@ The Packages page is where the packages are more detailed.
 
 The Customer page is where we can show our customers reviews.
 
+## Start Cooking Page
+
+The Start Cooking page contains a form where new clients can sign up to have access to the recipes. The submit buttom does not do anything for now.
+
+
 ## Common components
 
 Every page has a Nav bar with a hamburguer button with a side menu when the user uses small devices and a top menu with bigger devices.
 
 Every page also has the same footer with two links to Support and Terms of Use, which are not ready yet.
 
----
 
-#### Reactive buttons and styling
+### Reactive buttons and styling
 
 The buttons change color when hover and change the shadow to create an impression that they are being pushed down. They also change width according to the page's width.
 
@@ -51,9 +56,7 @@ The same thing happens with the Customers Page: When the page is large enought t
 
 ## What's next?
 
-### Fix Broken pages
-
-There is a lot to be done, I'm just getting started with this app. The links are broken since I didn't create all the pages yet. I will do that in the next steps.
+### Add missing pages
 
 #### Support Page
 
@@ -63,6 +66,3 @@ The idea is to create a fake support page, with some FAQs, a form for the user t
 
 The idea is to create the simplest page possible with some terms of use.
 
-#### Start Cooking Page
-
-Yet to be planned.
