@@ -1,17 +1,15 @@
 @import "../style/common.css";
 
+
 .testimonial {
     font-size: 1.2rem;
-    margin: 3rem 0;
+    padding: 2rem 0;
 }
 
 .testimonial-list {
     width: 85%;
     margin: auto;
-}
-
-.testimonial:first-of-type {
-    margin-top: 4rem;
+    padding-top: 2rem;
 }
 
 .testimonial-image_container {
@@ -100,6 +98,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
+    }
+    .testimonial-list {
+        padding: 3rem 0;
     }
     .testimonial-image_container {
         width: 90%;
