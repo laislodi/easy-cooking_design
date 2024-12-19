@@ -7,7 +7,7 @@
     --terciary-color: #d2a25a;
     --accent-color: #708d1d;
     --error-color: #c4181d;
-    --warn-color: #e9c367;
+    --warn-color: #fabc57;
     --light-color: #e5e6e0;
     --dark-color: #060504;
     --darkgrey-color: #282428;
@@ -54,6 +54,14 @@ main {
 
 .button:active {
     box-shadow: inset 2px 4px 4px var(--shadow-color);
+}
+
+.button:disabled {
+    border: var(--darkgrey-color) 2px solid;
+    background-color: var(--lightgrey-color);
+    color: var(--darkgrey-color);
+    box-shadow: none;
+    cursor: auto;
 }
 
 .open {
