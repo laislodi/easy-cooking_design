@@ -4,9 +4,9 @@
 
 This is a small and very simple project I'm working on to go deeper in CSS concepts and understanding.
 
-The idea is to merge my passion of cooking to my passion to develop function, beautiful and user-friendly designs.
+The idea is to merge my passion for cooking and development to build a functional, beautiful and user-friendly design.
 
-This project is a mock desing for a cooking course website, with plans to subscribe to get access to recipes, videos of how to cook, images of dishes and list of ingredients used in the recipes.
+This project is a mock design for a cooking course website, with plans to subscribe to get access to recipes, videos of how to cook, images of dishes and a list of ingredients used in the recipes.
 
 ## Primary goal
 
